@@ -1,0 +1,32 @@
+<style>
+  .mode-landscape .sl-layout { display: flex; align-items: center; }
+  .mode-landscape .sl-content { width: 55%; padding-right: 2.5rem; }
+  .mode-landscape .sl-visual { width: 45%; }
+
+  .mode-portrait .sl-layout { display: flex; flex-direction: column; }
+  .mode-portrait .sl-content { width: 100%; margin-bottom: 2rem; }
+  .mode-portrait .sl-visual { width: 100%; height: 300px; }
+</style>
+<section class="w-full h-full bg-white p-12 overflow-auto">
+  <div class="sl-layout h-full">
+    <div class="sl-content flex flex-col justify-between h-full">
+      <div>
+        <h1 class="text-6xl font-bold text-slate-900 leading-tight mb-6">
+          EventFlow: <span class="text-blue-900">Chaos-Free</span> Event Orchestration
+        </h1>
+        <p class="text-2xl text-slate-600 max-w-lg">
+          The mission control for professional planners to deliver flawless venues, vendors, and guest experiences.
+        </p>
+      </div>
+
+      <div class="mt-auto">
+        <data-attribution />
+      </div>
+    </div>
+
+    <div class="sl-visual relative h-full rounded-2xl overflow-hidden shadow-2xl">
+      <img src="http://localhost:8001/common/image-generation?prompt=Elegant%20event%20planning%20workspace%20with%20mood%20boards%20and%20luxury%20details%20professional%20aesthetic" alt="EventFlow" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+    </div>
+  </div>
+</section>
